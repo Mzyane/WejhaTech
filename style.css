@@ -144,6 +144,7 @@ header {
   text-transform: uppercase;
   cursor: pointer;
   text-decoration: none;
+  margin-left: 40%;
 }
 
 .container.active .bar {

@@ -18,17 +18,11 @@
 .img{
   height: 100px;
   width: 100%;
-  background-image: url('tours/bahla/bahla1.jpg');
+  background-image: url('tours/gutech/gu4.jpeg');
   border-radius: 5px;
   background-size: cover;
 }
-.img2{
-  height: 100px;
-  width: 100%;
-  background-image: url('tours/sawadi/sawadi.png');
-  border-radius: 5px;
-  background-size: cover;
-}
+
 
 a{
   padding: 10px;

@@ -29,12 +29,12 @@
                       <h2>Log In</h2>
                       <form>
                           <div class="inputbox">
-                              <input type="text" value="" id="username" required>
-                              <span>username</span>
-                          </div>
-                          <div class="inputbox">
                               <input type="email" value="" id="email" required>
                               <span>E-mail</span>
+                          </div>
+                        <div class="inputbox">
+                              <input type="text" value="" id="passward" required>
+                              <span>Passwaord</span>
                           </div>
                           <input type="submit" value="Log In" class="sub" id="submit">
                       </form>
@@ -97,11 +97,11 @@
 
     document.getElementById("submit").addEventListener('click', function(e){
      e.preventDefault();
-     set(ref(db, 'user/' + document.getElementById("username").value),
+     set(ref(db, 'user/' + document.getElementById("email").value),
      {
 
-       username: document.getElementById("username").value,
        email: document.getElementById("email").value,
+       passward: document.getElementById("password").value,
 
      });
        alert("Login Sucessfull  !");

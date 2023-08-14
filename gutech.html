@@ -1,0 +1,302 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <style>
+    #panorama {
+        width: 99vw;
+        height: 97vh;
+    }
+    .u-icon{
+        opacity: 0.8;
+        background-image: url('./images/arrows/u.gif');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 5vh;
+        width: 5vh;
+    }
+    .r-icon{
+        opacity: 0.8;
+        background-image: url('./images/arrows/r.gif');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 5vh;
+        width: 5vh;
+    }
+    .l-icon{
+        opacity: 0.8;
+        background-image: url('./images/arrows/l.gif');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 5vh;
+        width: 5vh;
+    }
+    .d-icon{
+        opacity: 0.8;
+        background-image: url('./images/arrows/d.gif');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 5vh;
+        width: 5vh;
+    }
+    </style>
+</head>
+<body>
+
+<div id="panorama"></div>
+<script>
+pannellum.viewer('panorama', {   
+    "default": {
+        "firstScene": "circle",
+        "author": "WejhaTech Team",
+        "autoLoad": true,
+        "sceneFadeDuration": 500,
+        "cssClass": "fw-icon",
+        "hotSpotDebug": true
+    },
+    "scenes": {
+        "circle": {
+            "title": "Gate 2",
+            "hfov": 110,
+            "pitch": 7.325220426182349,
+            "yaw": -3.55050,
+            "type": "equirectangular",
+            "panorama": "tours/gutech/gu.jpeg",
+            
+            "hotSpots": [
+                {
+                    "cssClass": "u-icon",
+                    "pitch": 6.028612685060832,
+                    "yaw": 53.20928798549011,
+                    "type": "scene",
+                    "text": "Campus",
+                    "sceneId": "campus"
+                }
+            ]
+        },
+
+        "campus": {
+            "title": "Campus",
+            "hfov": 60,
+            "yaw": -108.7,
+            "pitch": 1.7,
+            "type": "equirectangular",
+            "panorama": "./tours/gutech/gu2.jpeg",
+            
+            "hotSpots": [
+                {
+                    "cssClass": "u-icon",
+                    "pitch": -1.239320475505008,
+                    "yaw": 15.188672607263618,
+                    "type": "scene",
+                    "text": "Muesume",
+                    "sceneId": "Way to Muesume"
+                },
+                {
+                    "cssClass": "u-icon",
+                    "pitch": 7.392106795794303,
+                    "yaw": -99.81222158816215,
+                    "type": "scene",
+                    "text": "Way to Muesume",
+                    "sceneId": "Muesume"
+                },
+                {
+                    "cssClass": "l-icon",
+                    "pitch":  5.382802215026905,
+                    "yaw": -130.28415194882882,
+                    "type": "scene",
+                    "text": "Campus Dorms",
+                    "sceneId": "Campus Dorms"
+                },
+                {
+                    "cssClass": "u-icon",
+                    "pitch": -6.786970989335789,
+                    "yaw": 85.10129618611296,
+                    "type": "scene",
+                    "text": "Main Gate",
+                    "sceneId": "circle"
+                },
+            ]
+        },
+
+        "Way to Muesume": {
+            "title": "Way to muesume",
+            "hfov": 110,
+            "pitch": 2.73,
+            "yaw": -121.18,
+            "type": "equirectangular",
+            "panorama": "./tours/gutech/gu5.jpeg",
+            
+            "hotSpots": [
+                {
+                    "cssClass": "u-icon",
+                    "pitch": 2.73,
+                    "yaw": -121.18,
+                    "type": "scene",
+                    "text": "Campus",
+                    "sceneId": "campus"
+                }
+            ]
+        },
+        "Campus Dorms": {
+            "title": "Campus Dorms",
+            "hfov": 110,
+            "pitch": 4.173,
+            "yaw": 156.087,
+            "type": "equirectangular",
+            "panorama": "./tours/gutech/gu4.jpeg",
+            
+            "hotSpots": [
+                {
+                    "cssClass": "u-icon",
+                    "pitch": -8.720,
+                    "yaw": 21.113,
+                    "type": "scene",
+                    "text": "Campus",
+                    "sceneId": "campus"
+                },
+                {
+                    "cssClass": "u-icon",
+                    "pitch": 0.8383397261581326,
+                    "yaw": 153.77634182602557,
+                    "type": "scene",
+                    "text": "Campus Buildings",
+                    "sceneId": "openArea"
+                },
+                // {
+                //     "cssClass": "r-icon",
+                //     "pitch": -6.790433042260471,
+                //     "yaw": 50.811639042414086,
+                //     "type": "scene",
+                //     "text": "Campus Playgrounds",
+                //     "sceneId": "sideGround1"
+                // },
+                {
+                    "cssClass": "r-icon",
+                    "pitch": -6.790433042260471,
+                    "yaw": 50.811639042414086,
+                    "type": "scene",
+                    "text": "Seminar Hall Gate Entry",
+                    "sceneId": "fbGroundWay"
+                }
+            ]
+        },
+        "Muesume": {
+            "title": "Muesume",
+            "hfov": 110,
+            "pitch": 4.173,
+            "yaw": 156.087,
+            "type": "equirectangular",
+            "panorama": "./tours/gutech/gu6.jpeg",
+            
+            "hotSpots": [
+                {
+                    "cssClass": "u-icon",
+                    "pitch": 6.563425004984176,
+                    "yaw": -167.0767008239933,
+                    "type": "scene",
+                    "text": "Campus",
+                    "sceneId": "campus"
+                },
+                {
+                    "cssClass": "u-icon",
+                    "pitch": 1.9407678288128931,
+                    "yaw": -1.8677756626187403,
+                    "type": "scene",
+                    "text": "Campus Playgrounds",
+                    "sceneId": "sideGround1"
+                },
+                {
+                    "cssClass": "u-icon",
+                    "pitch": 3.968277477913014,
+                    "yaw": 54.27461114775896,
+                    "type": "scene",
+                    "text": "Seminar Hall",
+                    "sceneId": "seminar"
+                },
+            ]
+        },
+        "MUesume": {
+            "title": "Museume area",
+            "hfov": 110,
+            "pitch": 3.810,
+            "yaw": -1.919,
+            "type": "equirectangular",
+            "panorama": "./tours/gutech/gu8.jpeg",
+            
+            "hotSpots": [
+                {
+                    "cssClass": "u-icon",
+                    "pitch": 4.976152932619333,
+                    "yaw": -8.306834113594006,
+                    "type": "scene",
+                    "text": "Seminar Hall Gate Entry",
+                    "sceneId": "fbGroundWay"
+                },
+                {
+                    "cssClass": "u-icon",
+                    "pitch": -0.6287693670657012,
+                    "yaw": 85.07110984150872,
+                    "type": "scene",
+                    "text": "Cricket/Football Ground",
+                    "sceneId": "sideGround3"
+                }
+            ]
+        },
+        "Way to dorms": {
+            "title": "Way to dorms",
+            "hfov": 110,
+            "pitch": 3.810,
+            "yaw": -1.919,
+            "type": "equirectangular",
+            "panorama": "./tours/gutech/gu7.jpeg",
+            
+            "hotSpots": [
+            {
+                    "cssClass": "u-icon",
+                    "pitch": 4.779972883420289,
+                    "yaw": -108.14902852227286,
+                    "type": "scene",
+                    "text": "Campus",
+                    "sceneId": "sideGround1"
+                },
+                {
+                    "cssClass": "u-icon",
+                    "pitch": 3.810,
+                    "yaw": -1.919,
+                    "type": "scene",
+                    "text": "Campus Playgrounds",
+                    "sceneId": "sideGround3"
+                }
+            ]
+        },
+        "Way to Romanian theater": {
+            "title": "To Romanian theater",
+            "hfov": 110,
+            "pitch": 3.810,
+            "yaw": -1.919,
+            "type": "equirectangular",
+            "panorama": "./tours/gutech/gu10.jpeg",
+            
+            "hotSpots": [
+                {
+                    "cssClass": "u-icon",
+                    "pitch": 5.5794714040497,
+                    "yaw": -165.60098649317234,
+                    "type": "scene",
+                    "text": "Campus Playground",
+                    "sceneId": "sideGround1"
+                }
+            ]
+        },
+
+    }
+});
+</script>
+
+</body>
+</html>

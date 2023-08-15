@@ -12,44 +12,6 @@ html{
 }
 
 
-.nav{
-    padding: 1rem 2rem;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    color: rgba(255,255,255,.7);
-    z-index: 10;
-}
-
-.nav__list{
-    display: flex;
-    list-style: none;
-}
-
-.nav__list a{
-    text-decoration: none;
-    color: inherit;
-    letter-spacing: 1px;
-    font-size: 1em;
-    margin: 0 1rem;
-}
-
-.nav__list a:hover{
-    color: #fff;
-}
-
-.nav__list i{
-    font-size: 1.2em;
-}
-
-.follow-us{
-    color: #fff;
-    margin-right: 1rem;
-}
-
 
 .hero{
     background-image: url(Cover.jpg);
@@ -70,15 +32,23 @@ html{
 }
 
 
+.top-text{
+    position: absolute;
+    left: 10rem;
+    bottom: 20rem;
+    display: flex;
+    gap: 1rem;
+    z-index: 1;
+}
 
 .bottom-text{
     position: absolute;
-    left: 4rem;
-    bottom: 20rem;
+    left: 7rem;
+    bottom: 10rem;
     width: 25rem;
     display: flex;
     gap: 1rem;
-    color: #fff;
+    color: #b39090;
     z-index: 1;
 }
 
@@ -91,17 +61,17 @@ html{
 }
 
 .bottom-text p{
-    color: rgba(255,255,255,.7);
+    color: #b39090;
 }
 
 .view-link{
     text-decoration: none;
     letter-spacing: 1px;
-    color: rgba(255,255,255,.6);
+    color: #b39090;
 }
 
 .view-link:hover{
-    color: #fff;
+    color: #56ba99;
 }
 
 .view-link span{
